@@ -23,7 +23,8 @@ export default class Card extends Component {
     return filteredJobs.map((job, index) => {
       return (
         <div className="card" key={index}>
-          <div className="card-container">
+          <div className={job.featured ? "featured card-container" : "card-container"}>
+            <div className="left-border"></div>
             <div className="left-container">
               <img className="logo" src={job.logo} alt="company logo" />
               <div className="details-container">
