@@ -15,9 +15,9 @@
     "static/media/index.scss": "./static/media/bg-header-mobile.6b5ff5a0.svg"
   },
   "entrypoints": [
-    ".static/js/runtime-main.2804c549.js",
-    ".static/js/2.2b8d302d.chunk.js",
-    ".static/css/main.b150b712.chunk.css",
-    ".static/js/main.7d3d5c74.chunk.js"
+    "./static/js/runtime-main.2804c549.js",
+    "./static/js/2.2b8d302d.chunk.js",
+    "./static/css/main.b150b712.chunk.css",
+    "./static/js/main.7d3d5c74.chunk.js"
   ]
 }
