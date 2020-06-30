@@ -1,0 +1,96 @@
+#filter-container {
+    display: none;
+    top: 120px;
+    margin-left: 24px;
+    background: white;
+    width: calc(100% - 48px);
+    max-width: 1110px;
+    border-radius: 5px;
+    
+
+    &.active {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 120px;
+    }
+
+    .filters {
+        padding: 4px 24px 20px 19px;
+    
+        .filter-box {
+            display: inline-block;
+            margin-top: 16px;
+            .filter {
+                display: inline-block;
+                padding: 10px 8px 8px;
+                background: $LightCyanFilter;
+                color: $DesatDarkCyan;
+                font-size: 13px;
+                font-weight: 700;
+                border-radius: 3px 0 0 3px;
+                vertical-align: top;
+            }
+
+            .cross {
+                font-size: 18px;
+                display: inline-block;
+                text-align: center;
+                padding: 7px 0 5px;
+                width: 32px;
+                color: white;
+                background: $DesatDarkCyan;;
+                border-radius: 0 3px 3px 0;
+                margin-right: 16px;
+                cursor: pointer;
+
+                &:hover {
+                    background: $VeryDarkCyan;
+                }
+            }
+
+        }
+    }
+
+    .clear {
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 700;
+        color: $DarkCyan;
+        float: right;
+        margin: auto 25px auto 0;
+
+        &:hover {
+            color: $DesatDarkCyan;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+@media (min-width: 600px) {
+    #filter-container {
+        width: calc(100% - 96px);
+        margin: 0 48px;
+    }
+    
+  }
+
+@media (min-width: 850px) {
+    #filter-container {
+        .filters {
+            padding: 4px 24px 20px 40px;
+        }
+
+        .clear {
+            margin-right: 40px;
+        }
+    }
+
+}
+  
+  @media (min-width: 1207px) {
+    #filter-container {
+        margin: auto;
+    };
+  }

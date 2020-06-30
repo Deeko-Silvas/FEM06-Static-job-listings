@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    position: relative;
+    width: calc(100% - 48px);
+    max-width: 1110px;
+    margin: 24px 24px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.logo {
+    height: 48px;
+    width: 48px;
+    top: -24px;
+    left: 24px;
+    position: absolute;
+}
+
+@media (min-width: 600px) {
+    .card-container {
+        width: calc(100% - 96px);
+        margin: 0 48px;
+    }
+    
+}
+
+@media (min-width: 1207px) {
+    .card-container {
+        margin: auto;
+    };
+}
